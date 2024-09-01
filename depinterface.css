@@ -1,0 +1,72 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #111213;
+  }
+  
+  a:hover {
+    color: #101112;
+  }
+  
+  /* Navigation Menu Styles */
+  
+  .menu {
+    background-color: #1b1d1e;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .menu-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .menu-title a {
+    color: #fff;
+  }
+  
+  /* Departments Styles */
+  
+  .departments {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .departments h2 {
+    margin-bottom: 10px;
+  }
+  
+  .departments a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #050505;
+  }
+  
+  .departments a:hover {
+    color: #121314;
+  }

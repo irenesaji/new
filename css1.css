@@ -1,0 +1,84 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #6fd1c1;
+}
+
+/* Navigation Menu */
+.menu {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    color: #a40e0e; /* Set text color for menu */
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu-title a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.back-link {
+    text-decoration: none;
+}
+
+.back-button {
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+/* Departments Section */
+.departments {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff; /* Background color for departments section */
+    border-radius: 5px; /* Rounded corners for departments section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for departments section */
+    margin: 20px; /* Margin around departments section */
+}
+
+.departments h2 {
+    margin: 0;
+    font-size: 28px; /* Larger font size for section heading */
+    color: #333; /* Text color for section heading */
+}
+
+.departments h2 a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #eee; /* Background color for links */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.departments h2 a:hover {
+    background-color: #ddd; /* Darker background on hover */
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Department Data</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .wrapper {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        #data_table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        #data_table th,
+        #data_table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        /* Style for the table rows */
+        #data_table tr:nth-child(even) {
+            background-color: #85f2e5;
+        }
+
+        #data_table tr:hover {
+            background-color: #d33737;
+        }
+
+        input[type="button"] {
+            padding: 5px 10px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+            width: 70px;
+            text-align: center;
+        }
+
+        input[type="button"].edit {
+            background-color: #d974a3;
+            color: white;
+        }
+
+        input[type="button"].delete {
+            background-color: #ecc331;
+            color: white;
+        }
+
+        input[type="button"].save {
+            background-color: #5bbcc5;
+            color: white;
+        }
+
+        input[type="button"].add {
+            background-color: #129d63;
+            color: white;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            width: 95%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <table align="center" id="data_table" cellspacing="2" cellpadding="5" border="1">
+            <tr>
+                <th>DID</th>
+                <th>NAME</th>
+                <th>DEPT</th>
+                <th>ACTIONS</th>
+            </tr>
+
+            <tr id="row1">
+                <td id="DID_row1">cv001</td>
+                <td id="NAME_row1">Mahi</td>
+                <td id="DEPT_row1">CIVIL</td>
+             
+                <td>
+                    <input type="button" id="edit_button1" value="edit" class="edit" onclick="edit_row('1')">
+                    <input type="button" id="delete_button1" value="delete" class="delete" onclick="delete_row('1')">
+                    <input type="button" id="Save_button1" value="save" class="save" style="display:none;" onclick="save_row('1')">
+                </td>
+            </tr>
+
+            <tr id="row2">
+                <td id="DID_row2">cv002</td>
+                <td id="NAME_row2">Gopi</td>
+                <td id="DEPT_row2">CIVIL</td>
+               
+                <td>
+                    <input type="button" id="edit_button2" value="edit" class="edit" onclick="edit_row('2')">
+                    <input type="button" id="delete_button2" value="delete" class="delete" onclick="delete_row('2')">
+                    <input type="button" id="Save_button2" value="save" class="save" style="display:none;" onclick="save_row('2')">
+                </td>
+            </tr>
+
+            <tr id="row3">
+                <td id="DID_row3">cv003</td>
+                <td id="NAME_row3">Seema</td>
+                <td id="DEPT_row3">CIVIL</td>
+              
+                <td>
+                    <input type="button" id="edit_button3" value="edit" class="edit" onclick="edit_row('3')">
+                    <input type="button" id="delete_button3" value="delete" class="delete" onclick="delete_row('3')">
+                    <input type="button" id="Save_button3" value="save" class="save" style="display:none;" onclick="save_row('3')">
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="new_DID"></td>
+                <td><input type="text" id="new_NAME"></td>
+                <td><input type="text" id="new_DEPT"></td>
+             
+                <td><input type="button" class="add" onclick="add_row()" value="add row"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
